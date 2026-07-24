@@ -1,2 +1,6 @@
 Report authored for the Networks module at the University of Oxford. Report.pdf highlights all key findings.
 Accompained by Jupyter notebook including all the code used throughout the report.
+
+This repository explores the All-Or-None model, a variation of growing preferential attachment networks where a new node connects to a target node chosen uniformly at random, and then connects to all of that target's neighbors with probability p (or none with probability 1−p). The notebook provides numerical simulations alongside analytical solutions, using both continuum approximations and discrete recurrence relations—to evaluate how connection probability p and network size N shape structural properties.
+
+Key findings reveal a phase transition at p=0.5, where the network shifts from a sparse regime to a dense regime where edges scale as E∝N^2p. The repository demonstrates that the clustering coefficient scales non-linearly following C=3p/1+2p, degree distribution in sparse regimes exhibits heavy tails governed by exponent γ=1+p/p, and average shortest path distance L decreases linearly with p as topological shortcuts are introduced. While analytical models match simulations closely for most metrics, they slightly overestimate degree assortativity (r) because expectation-based models smooth out local variations like isolated nodes.
